@@ -32,4 +32,10 @@ let getJohnOrders = () => {
   });
 };
 
-// Start coding here
+async function executeAsyncOperations() {
+  const profile = await getJohnProfile();
+  console.log(profile);
+  const orders = await getJohnOrders();
+  console.log(orders);
+}
+executeAsyncOperations();
